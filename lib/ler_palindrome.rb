@@ -1,4 +1,4 @@
-require "ler_palindrome/version"
+require "ler_palindrome/version 0.2.0"
 
 class String
 
