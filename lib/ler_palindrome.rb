@@ -1,4 +1,4 @@
-require "ler_palindrome/version 0.2.0"
+require "ler_palindrome/version"
 
 class String
 
@@ -13,14 +13,10 @@ class String
 
   # Returns content for palindrome testing.
   def processed_content
-    self.to_s.scan(/[a-zFILL_IN]/i).join.downcase
+    self.to_s.scan(/[a-z]/i).join.downcase
   end
 end
 
 class String
   include LerPalindrome
-end
-
-class Integer
-  include FILL_IN
 end
